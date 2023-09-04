@@ -24,7 +24,7 @@ body {
 /* Write your CSS below */
 
 h1 {
-  font-size: 4em;
+  font-size: 3.8em;
   text-align: center;
   color: white;
 }
@@ -47,30 +47,67 @@ h1 {
 }
 
 .intro img {
-  width: 300px;
+  width: 320px;
 }
 
 .intro-text {
-  font-size: 1em;
+  font-size: 1.2em;
   text-align: center justify;
-  padding: 0 200px 20px;
+  padding: 0 80px 20px;
 }
 
 h2 {
-  font-size: 1.5em;
-  padding: 30px 0 20px;
+  font-size: 1.3em;
+  padding: 30px 0 25px;
 }
 
 .ingredients {
-  margin: 0 0 0 50px;
+  padding: 0 0 10px 50px;
 }
 
 .ingredients ul {
+  list-style-type: "- ";
   padding: 0 0 0 30px;
 }
 
-.ingredients img {
-  width: 500px;
+.ingredients ul li {
+  padding: 0 0 5px;
+}
+
+.ingr-img {
+  padding: 30px 0 0;
   text-align: center;
 }
 
+.ingr-img img {
+  width: 300px;
+}
+
+.directions {
+  margin: 0 0 70px;
+  padding: 0 80px 0 50px;
+}
+
+.directions ol {
+  padding: 0 0 0 30px;
+  counter-reset: list;
+  text-align: justify;
+}
+
+.directions ol li {
+  padding: 0 0 5px;
+}
+
+
+.directions ol > li {
+  list-style: none;
+}
+
+.directions ol > li:before {
+  content: counter(list, number) ") ";
+  counter-increment: list;
+}
+
+hr {
+  width: 88%;
+}
